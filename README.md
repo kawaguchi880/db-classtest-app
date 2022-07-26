@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##
+```
+
+echo fs.inotify.max_user_watches=24288 | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+```
 ## Available Scripts
 
 In the project directory, you can run:
