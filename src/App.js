@@ -1,12 +1,12 @@
 import './App.css';
-import { Count } from "./component/index"
+import { Question } from "./component/index"
 
 function App() {
   return (
     <>
       <div className="App">
         <b><u>データベース道場</u></b>
-        <Count />
+        <Question />
       </div>
     </>
   );
