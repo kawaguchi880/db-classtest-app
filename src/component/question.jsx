@@ -2,22 +2,23 @@ import { useState } from "react";
 // import { shuffle } from "./index"
 
 const INITIAL_COUNT = 1;
+// jsonとして読み込む
 const selections = [
-  { "id": 1, "questionnumber": 1, item: "HTML" },
-  { "id": 2, "questionnumber": 1, item: "CSS" },
-  { "id": 3, "questionnumber": 1, item: "JavaScript" },
-  { "id": 4, "questionnumber": 1, item: "react" },
-  { "id": 5, "questionnumber": 2, item: "階層型データベース" },
-  { "id": 6, "questionnumber": 2, item: "関係データベース" },
-  { "id": 7, "questionnumber": 2, item: "ネットワーク型データベース" }
+  { "id": 1, "questionnumber": 1, "item": "HTML" },
+  { "id": 2, "questionnumber": 1, "item": "CSS" },
+  { "id": 3, "questionnumber": 1, "item": "JavaScript" },
+  { "id": 4, "questionnumber": 1, "item": "react" },
+  { "id": 5, "questionnumber": 2, "item": "階層型データベース" },
+  { "id": 6, "questionnumber": 2, "item": "関係データベース" },
+  { "id": 7, "questionnumber": 2, "item": "ネットワーク型データベース" }
 ];
 const rowQuestions = [
-  { id: 1, description: "次の選択肢のうちライブラリに相当するものはどれ？？", answer: "react" },
-  { id: 2, description: "データベースの種類のうち一般に 2 次元の表として表現されるものはどれか．", answer: "関係データベース" },
-  { id: 3, description: "問題文3", answer: "あ" },
-  { id: 4, description: "問題文4", answer: "あ" },
-  { id: 5, description: "問題文5", answer: "あ" },
-  { id: 6, description: "問題文6", answer: "あ" }
+  { "id": 1, "description": "次の選択肢のうちライブラリに相当するものはどれ？？", "answer": "react" },
+  { "id": 2, "description": "データベースの種類のうち一般に 2 次元の表として表現されるものはどれか．", "answer": "関係データベース" },
+  { "id": 3, "description": "問題文3", "answer": "あ" },
+  { "id": 4, "description": "問題文4", "answer": "あ" },
+  { "id": 5, "description": "問題文5", "answer": "あ" },
+  { "id": 6, "description": "問題文6", "answer": "あ" }
 ];
 
 // let shuffledQuestions = shuffle(rowQuestions);
