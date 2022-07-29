@@ -60,7 +60,9 @@ const Question = () => {
       setAnswer(false);
     }
   }
+  const showAnswer = () => {
 
+  }
 
   return (
     <div>
@@ -73,8 +75,12 @@ const Question = () => {
         {selectedValue}
       </b></div>
       <div>
-        <div>正誤確認<b >{answer ? "〇" : "✖"}</b></div>
+        {/* ボタンを押してから能動的に正誤を確認したい */}
 
+        <button onClick={showAnswer}>正誤確認</button>
+        <div>
+          <b id="answer">{answer ? "〇" : "✖"}</b>
+        </div>
       </div>
       <p>
         <button onClick={handleClick}>
